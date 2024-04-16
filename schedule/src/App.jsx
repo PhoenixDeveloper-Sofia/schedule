@@ -7,11 +7,12 @@ import AreaChartComponent from './components/AreaChartComponent'
 function App() {
   return (
     <div className='wrapper' translate='no'>
+      <h1 className='toolbar'>Система управления регионом</h1>
       <div className="container">
-      <AreaChartComponent/>
-      <BarChartComponent/>
-      <LineChartComponent/>
-      <PieChartComponent/>
+        <AreaChartComponent />
+        <BarChartComponent />
+        <LineChartComponent />
+        <PieChartComponent />
       </div>
     </div>
   )

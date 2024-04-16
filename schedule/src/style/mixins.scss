@@ -1,0 +1,11 @@
+
+@mixin flex($jc:flex-start){
+    display: flex;
+    justify-content:$jc;
+    align-items: center;
+}
+
+@mixin width ($mw){
+    max-width: $mw;
+    width: 100%;
+}

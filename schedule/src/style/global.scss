@@ -1,18 +1,70 @@
+@import "mixins.scss";
 @import "reset.scss";
 
 .wrapper {
     max-width: 1920px;
+    padding-top: 20px;
+}
+
+.toolbar {
+    text-align: center;
+    font-size: 30px;
 }
 
 .container {
     max-width: 1400px;
-    height: 100dvh;
+    height: 160dvh;
     margin: 0 auto;
-   padding-top: 40px;
+    padding-top: 40px;
     display: grid;
-    grid-template-columns:  repeat(2, 1fr);
-    grid-template-rows:  repeat(2, 43%);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 43%);
     grid-column-gap: 10px;
     grid-row-gap: 60px;
     justify-items: center;
+}
+
+.legend {
+    padding-left: 80px;
+    @include flex;
+    padding-top: 20px;
+    gap: 5px;
+
+    &__circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    &-text {
+        padding-left: 5px;
+        color: #000;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+
+.legend_pie__box {
+    @include flex;
+    padding-top: 20px;
+    gap: 5px;
+
+    &__circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+    }
+
+    &-text {
+        padding-left: 5px;
+        color: #000;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+
+.legend_pie{
+    @include flex(end);
+    font-size: 14px;
+    gap: 15px;
 }
